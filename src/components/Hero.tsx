@@ -25,7 +25,7 @@ export default function Hero({ logoUrl, bgUrl, onPageChange }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#090A12]"
+      className="relative min-h-screen flex items-center justify-center pt-28 pb-28 overflow-hidden bg-[#090A12]"
     >
       {/* 1. Background Cinematic Artwork with Overlays */}
       <div className="absolute inset-0 z-0">
@@ -157,19 +157,19 @@ export default function Hero({ logoUrl, bgUrl, onPageChange }: HeroProps) {
             <span>LIHAT SERVER</span>
           </button>
         </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1 }}
-          onClick={() => handleScrollTo("ip-section")}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 group text-gray-500 hover:text-[#31C5FF] transition-colors"
-        >
-          <span className="text-[10px] font-mono tracking-widest uppercase">Explore Details</span>
-          <ChevronDown className="w-5 h-5 animate-bounce group-hover:translate-y-0.5 transition-transform" />
-        </motion.div>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
+        onClick={() => handleScrollTo("ip-section")}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer flex flex-col items-center gap-1 group text-gray-500 hover:text-[#31C5FF] transition-colors"
+      >
+        <span className="text-[10px] font-mono tracking-widest uppercase">Explore Details</span>
+        <ChevronDown className="w-5 h-5 animate-bounce group-hover:translate-y-0.5 transition-transform" />
+      </motion.div>
 
       {/* Particle movement custom styles */}
       <style>{`

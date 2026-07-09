@@ -133,7 +133,7 @@ export default function PremiumCards() {
           
           <div className="absolute top-0 right-0 w-48 h-48 bg-[#6E3BFF]/10 rounded-full blur-3xl pointer-events-none" />
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -202,7 +202,7 @@ export default function PremiumCards() {
             </div>
 
             {/* Gamemode Preview Mock Widget */}
-            <div className="relative rounded-xl overflow-hidden bg-[#090A12] border border-[#6E3BFF]/20 p-6 flex flex-col justify-between h-72">
+            <div className="relative rounded-xl overflow-hidden bg-[#090A12] border border-[#6E3BFF]/20 p-6 flex flex-col justify-between h-full min-h-[320px] gap-6">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[#6E3BFF]/20 to-transparent pointer-events-none" />
               <div>
                 <span className="text-[10px] font-mono text-[#F5C85C] uppercase tracking-wider bg-[#F5C85C]/10 border border-[#F5C85C]/20 px-2 py-0.5 rounded-md">

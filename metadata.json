@@ -1,0 +1,6 @@
+{
+  "name": "Revordian Unbeatable SMP",
+  "description": "Website resmi Revordian Unbeatable SMP - Dunia Semi Roleplay Minecraft lintas platform yang memadukan petualangan, ekonomi, PvP, dan kebebasan bermain.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
